@@ -1,0 +1,188 @@
+@media only screen and (max-width : 1600px) {
+
+}
+
+
+@media only screen and (max-width : 1366px) {
+
+}
+
+@media only screen and (max-width : 1279px) {
+
+}
+
+@media only screen and (max-width : 1023px) {
+	
+	.nav_button,
+	.logo_media {
+		display: inline-block;
+	}
+	
+	.nav_button {
+		float: left;
+		margin-top: 43px;
+	}
+	
+	.logo_media {
+		margin: 22px 0 0 50px;
+	}
+	
+	.nav_top,
+	.logo {
+		display: none;
+	}
+	
+	.nav_top.open {
+		display: block;
+		position: absolute;
+		background-color: $white;
+		height: 100%;
+    width: 406px;
+    left: 0;
+		padding: 34px 34px 34px 80px;
+		.main_menu-left {
+			margin-top: 55px;
+		}
+		.main_menu-left,
+		.main_menu-right {
+			display: block;
+			width: 100%;
+			li {
+				width: 100%;
+				text-align: left;
+				padding-bottom: 97px;
+			}
+		}
+	}
+	
+	.nav_button_close {
+		float: right;
+		display: block;
+	}
+	
+	.main_links li a {
+		@include font-size(1.4);
+	}
+	
+	.lang {
+		float: right;
+	}
+	
+	.footer_nav .nav_top {
+		width: 100%;
+	}
+	
+	.footer_nav .nav_top,
+	.footer_nav .logo{
+		display: inline-block;
+	}
+	
+	.footer_nav .main_menu-right li {
+		width: 44%;
+	}
+	
+	/* about */
+	
+	.sidebar { 
+		float: none;
+		padding-left: 0;
+		width: 100%;
+		.title {
+			display: none;
+		}
+		.sidebar_nav li {
+			display: inline-block;
+			vertical-align: middle;
+			width: 25%;
+			border: none;
+			padding-right: 10px;
+			&:not(:first-child) {
+				border-left: 1px solid #e1e1e1;
+				padding-left: 6%;
+			}
+		}
+	}
+	
+	.about_main_content {
+		width: 100%;
+	}
+	
+}
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+
+	.nav_top.open {
+		width: 100%;
+	}
+	
+	.nav_top.open .main_menu-left li, 
+	.nav_top.open .main_menu-right li {
+		padding-bottom: 55px;
+	}
+	
+	.nav_top.open .main_menu-right li:last-child {
+		padding-bottom: 35px;
+	}
+	
+	.nav_button_close {
+		float: none;
+		text-align: center;
+		margin-left: -46px;
+	}
+	
+	.nav_top.open .main_menu-left {
+		margin-top: 44px;
+	}
+	
+	.lang {
+		display: none;
+	}
+	
+	.main_links li.delimiter {
+		display: none;
+	}
+	
+	.main_links li a {
+		text-decoration: underline;
+		@include line-height(3.0);
+	}
+	
+	.main_links, 
+	h1.title {
+    text-align: left;
+	}
+	
+	h1,
+	.h1 {
+	@include font-size(2.4);
+	}
+	
+	.lang_media {
+		display: block;
+		float: none;
+		text-align: left;
+		a {
+			@include font-size(2.4);
+			&.en {
+				padding-left: 41px;
+				&:before {
+					height: 17px;
+					left: 20px;
+				}
+			}
+		}
+	}
+	
+}
+
+@media only screen and (max-width : 320px) {	
+	
+}

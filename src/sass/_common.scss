@@ -1,0 +1,296 @@
+/* --- general styles --- */
+
+* {
+	outline: none;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	/* Sets up the Base 10 stuff 100%/1.6 */
+	height: 100%;
+}
+
+body {
+	background-color: $bgBody;
+	height: 100%;
+	width: 100%;
+	color: $mainTextColor;
+	font-family: 'ProximaNova-Regular', $font-stack-helvetica;
+	@include font-size(1.4);
+//	@include line-height(3.0);
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	li {
+		list-style: none;
+	}
+}
+
+h1,
+.h1 {
+	@include font-size(3.0);
+	letter-spacing: 0.2em;
+//	@include line-height(2.2);
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	@include font-size(1.6);
+	@include line-height(2.4);
+	letter-spacing: 0.1em;
+	margin: 26px 0;
+}
+
+/* --- end of general styles --- */
+
+.wrap {
+	max-width: 1220px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.body_index	{
+	background-image: url('../img/bg_img.jpg');
+	background-size: cover;
+	position: relative;
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(115, 115, 155, .1);
+		z-index: -1;
+	}
+}
+
+
+
+/* --- header --- */
+
+header {
+	@include font-size(0);
+}
+
+.lang,
+.lang_media {
+	text-align: right;
+	padding: 12px 0 0;
+	a{
+		text-transform: uppercase;
+		color: $black;
+		@include font-size(1.4);
+		&.active{
+			font-family: 'ProximaNova-Bold', $font-stack-helvetica;
+			color: $brown;
+		}
+		&.en {
+			padding-left: 25px;
+			position: relative;
+			&:before {
+				content: '';
+				position: absolute;
+				display: inline-block;
+				width: 1px;
+				height: 10px;
+				background-color: $black;
+				top: 3px;
+				left: 13px;
+			}
+		}
+	}
+}
+
+.logo_media,
+.nav_button_close,
+.lang_media{
+	display: none;
+}
+
+.main_menu-left,
+.main_menu-right,
+.main_menu-left li,
+.main_menu-right li,
+.logo{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.main_menu-left,
+.main_menu-right{
+	width: 40%;
+}
+
+.logo{
+	width: 20%;
+	text-align: center;
+}
+
+.main_menu-left li a,
+.main_menu-right li a{
+	color: $black;
+	@include font-size(1.8);
+	letter-spacing: 0.2em;
+}
+
+.main_menu-left li {
+//	margin-right: 33%;
+	width: 50%;
+}
+
+.main_menu-right {
+	text-align: right;
+}
+
+.main_menu-right li {
+	text-align: right;
+//	margin-left: 19%;
+	width: 50%;
+	@include font-size(0);
+}
+
+.nav_button {
+	display: none;
+}
+
+/* --- end of header --- */
+
+/* --- footer nav --- */
+
+.footer_nav {
+	@include font-size(0);
+  filter: grayscale(100%);
+	background-color: $white;
+	padding: 60px 0;
+	opacity: .4;
+}
+
+/* --- and of footer nav --- */
+
+/* --- main content --- */
+
+h1.title {
+	color: $white;
+	text-align: center;
+//	padding-top: 24%;
+	padding: 20% 0 18px;
+}
+
+.main_links {
+	text-align: center;
+	li {
+		display: inline-block;
+		a {
+			color: $white;
+			@include font-size(1.8);
+			letter-spacing: 0.2em;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		&.delimiter {
+			width: 1px;
+			height: 12px;
+			background-color: $white;
+			margin: 0 15px;
+		}
+	}
+}
+
+/* --- end of main content --- */
+
+
+/* --- about page --- */
+
+.inner_content{
+	padding-top: 73px;
+}
+
+h2.title {
+	@include font-size(3.0);
+	letter-spacing: 0.2em;
+	color: $brown;
+	font-weight: normal;
+	margin: 0 0 33px 0;
+	text-transform: uppercase;
+}
+
+.about_main_content {
+	width: 72.881%; /*860px*/	
+}
+
+.img_block {
+	margin: 20px 0;
+	overflow: hidden;
+	img {
+		width: 100%;
+	}
+}
+
+blockquote {
+	background-color: $white;
+	padding: 60px;
+	color: $addTextColor;
+	@include font-size(0);
+	.name {
+		font-family: 'ProximaNova-Extrabld', $font-stack-helvetica;
+		@include font-size(3.0);
+		@include line-height(3.6);
+		letter-spacing: 0.1em;
+		display: inline-block;
+		width: 31.4%; /*270px*/
+		vertical-align: middle;
+	}
+	.text {
+		display: inline-block;
+		font-family: 'Roboto-Italic', $font-stack-helvetica;
+		@include font-size(1.6);
+		@include line-height(2.4);
+		font-style: italic;
+		letter-spacing: 0.2em;
+		width: 68.6%;
+		border-left: 1px solid #eee;
+		padding-left: 57px;
+		vertical-align: middle;
+	}
+}
+
+.sidebar {
+	float: right;
+	width: 27.119%;
+	padding-left: 8.475%; /*100px*/
+}
+
+.sidebar_nav {
+	@include font-size(0);
+	li {
+		border-top: 1px solid #e1e1e1;
+		a {
+			padding: 40px 0;
+			@include font-size(1.6);
+			letter-spacing: 0.2em;
+			color: $addTextColor;
+			display: inline-block;
+			&.active{
+				color: $brown;
+			}
+		}
+		&:last-child {
+			border-bottom: 1px solid #e1e1e1;
+		}
+	}
+}
+
+/* --- and of about page --- */

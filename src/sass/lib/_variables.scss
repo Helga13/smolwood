@@ -1,0 +1,15 @@
+@include font-face('ProximaNova-Regular', "../fonts/ProximaNova-Regular" ,null, null, ttf eot woff svg);
+@include font-face('ProximaNova-Black', "../fonts/ProximaNova-Black" ,null, null, ttf eot woff svg);
+@include font-face('ProximaNova-Bold', "../fonts/ProximaNova-Bold" ,null, null, ttf eot woff svg);
+@include font-face('ProximaNova-Extrabld', "../fonts/ProximaNova-Extrabld" ,null, null, ttf eot woff svg);
+@include font-face('ProximaNova-Light', "../fonts/ProximaNova-Light" ,null, null, ttf eot woff svg);
+@include font-face('ProximaNova-Semibold', "../fonts/ProximaNova-Semibold" ,null, null, ttf eot woff svg);
+@include font-face('ProximaNovaT-Thin', "../fonts/ProximaNovaT-Thin" ,null, null, ttf eot woff svg);
+@include font-face('Roboto-Italic', "../fonts/Roboto-Italic" ,null, null, ttf eot woff svg);
+
+$black: #000;
+$bgBody: #f5f5f5;
+$mainTextColor: #333;
+$addTextColor: #666;
+$white: #fff;
+$brown: #7c542d;
