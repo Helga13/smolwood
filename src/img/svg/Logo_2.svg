@@ -1,12 +1,14 @@
-<div class="footer_nav">
-<div class="wrap">
-	<nav class="nav_top">
-		<ul class="main_menu-left">
-			<li><a href="#">О нас</a></li>
-			<li><a href="#">Каталог</a></li>
-		</ul>
-	<div class="logo"><a href="index.html">
-<svg id="Слой_1" width="334px" height="111.5px" viewBox="0 0 334 111.5" enable-background="new 0 0 334 111.5"
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+]>
+<svg version="1.1" id="Слой_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="334px" height="111.5px" viewBox="0 0 334 111.5" enable-background="new 0 0 334 111.5"
 	 xml:space="preserve">
 <path fill-rule="evenodd" clip-rule="evenodd" fill="#A9A6A6" d="M283.73,42.311v-1.5l0,0c-0.2-0.6-0.1-1.4-0.2-2.1
 	c-0.1-0.6-0.2-1-0.4-1.6c0-0.2-0.1-0.4-0.2-0.6c-0.4-1.1-0.7-2-1.2-2.9c-2.1-2.1-4.6-2.4-7.1-2.4c1.7-0.4,4.7-0.1,6.4,1.2
@@ -175,13 +177,3 @@
 	c0-3.1-1.1-5.8-3.4-8c-2.3-2.2-5.2-3.3-8.5-3.3c-3.2,0-5.9,1.1-8.2,3.4c-2.2,2.2-3.4,4.8-3.4,7.9c0,3.2,1.2,5.8,3.5,8
 	c2.4,2.2,5.2,3.3,8.6,3.3c3.1,0,5.8-1.1,8-3.3C142.83,62.111,143.93,59.511,143.93,56.411L143.93,56.411z"/>
 </svg>
-
-
-	</a></div>
-		<ul class="main_menu-right">
-			<li><a href="#">Сотрудничество</a></li>
-			<li><a href="#">Контакты</a></li>
-		</ul>	
-	</nav>
-	</div>
-</div>

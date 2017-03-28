@@ -64,6 +64,8 @@ p {
 	background-image: url('../img/bg_img.jpg');
 	background-size: cover;
 	position: relative;
+	transform: scale(1);
+	transition: background-image 0.3s ease-out;
 	&:after {
 		content: '';
 		position: absolute;
@@ -171,13 +173,85 @@ header {
 
 .footer_nav {
 	@include font-size(0);
-  filter: grayscale(100%);
+//  filter: grayscale(100%);
 	background-color: $white;
-	padding: 60px 0;
-	opacity: .4;
+	padding: 60px 0;	
+	.logo {
+		svg {
+			width: 220px;
+		}
+	}
+	.main_menu-left,
+	.main_menu-right {
+		opacity: .5;
+	}
 }
 
 /* --- and of footer nav --- */
+
+/* --- breadcrumbs --- */
+
+.breadcrumbs {
+//	text-align: center;
+	margin: -24px 0 68px;
+	li 	{
+		display: inline-block;
+		color: $brown;
+		letter-spacing: 0.2em;
+		padding: 0 22px 0 0;
+		@include font-size(1.4);
+		a {
+			color: $mainTextColor;
+		}
+		&.last {
+			color: $brown;
+		}
+	}
+}
+
+/* --- and of breadcrumbs --- */
+
+/* --- pagination --- */
+
+.pagination {
+	padding: 10px 0 26px 9.3%; 
+	li {
+		display: inline-block;
+		width: 5.8%;
+		a {
+			@include font-size(1.6);
+			color: $mainTextColor;
+			padding: 5px;
+			&.active {
+				color: $brown;
+			}
+			&.prev:before,
+			&.next:after{
+				content: '';
+				background-image: url('../img/svg/arrow.svg');
+				display: inline-block;
+				width: 21px;
+				height: 5px;
+				margin: 2px 10px 2px 0;
+			}
+			&.next:after {
+				transform: rotate(180deg);
+				margin: 2px 0 2px 10px;
+			}
+		}
+		&.nav {
+			width: 21%;
+			a {
+				padding: 5px 0;
+			}
+		}
+		&.nav.next {
+			text-align: right;
+		}
+	}
+}
+
+/* --- and of pagination --- */
 
 /* --- main content --- */
 
@@ -196,8 +270,10 @@ h1.title {
 			color: $white;
 			@include font-size(1.8);
 			letter-spacing: 0.2em;
+			border-bottom: 1px solid transparent;
+			transition: border-bottom-color 0.25s ease;
 			&:hover {
-				text-decoration: underline;
+				border-bottom-color: $white;
 			}
 		}
 		&.delimiter {
@@ -229,6 +305,12 @@ h2.title {
 
 .about_main_content {
 	width: 72.881%; /*860px*/	
+	.news_item {
+		margin-bottom: 42px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 }
 
 .img_block {
@@ -243,6 +325,7 @@ blockquote {
 	background-color: $white;
 	padding: 60px;
 	color: $addTextColor;
+	margin: 70px 0;
 	@include font-size(0);
 	.name {
 		font-family: 'ProximaNova-Extrabld', $font-stack-helvetica;
@@ -291,6 +374,72 @@ blockquote {
 			border-bottom: 1px solid #e1e1e1;
 		}
 	}
+}
+
+.about_main_content {
+	@include font-size(0);
+	padding-bottom: 70px;
+	.left-col {
+		font-family: 'RobotoСondensed-Regular', $font-stack-helvetica;
+		@include font-size(1.6);
+		letter-spacing: 0.1em;
+		color: $brown;
+		display: inline-block;
+		width: 9.3%;
+		vertical-align: top;
+		text-transform: uppercase;
+	}
+	.right-col {
+		display: inline-block;
+		width: 90.7%;
+		vertical-align: top;
+		.img_block {
+			margin-top: 0;
+		}
+	}
+}
+
+.subtitle_article {
+	@include font-size(3.0);
+	@include line-height(3.6);
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: $brown;
+	padding-top: 3px;
+}
+
+.return_btn {
+	padding-bottom: 15px;
+	a {
+		@include font-size(1.6);
+		@include line-height(2.4);
+		letter-spacing: 0.1em;
+		color: $brown;
+		&:before {
+			content: '';
+			background-image: url('../img/png/return-arr.png'); 
+			display: inline-block;
+			width: 21px;
+			height: 5px;
+			margin: 3px 13px 3px 0;
+		}
+	}
+}
+
+.next_btn {
+	@include font-size(1.6);
+		@include line-height(2.4);
+		letter-spacing: 0.1em;
+		color: $brown;
+		&:after {
+			content: '';
+			background-image: url('../img/png/return-arr.png'); 
+			display: inline-block;
+			width: 21px;
+			height: 5px;
+			margin: 3px 0 3px 13px;
+			transform: rotate(180deg);
+		}
 }
 
 /* --- and of about page --- */
