@@ -137,6 +137,22 @@
 		}
 	}
 	
+	/* catalog */
+	
+	.catalog_content {
+		width: 86.22%;
+		margin: 0 auto;
+	}
+	
+	.catalog_item {
+		width: 100%;
+		padding: 0 10px 38px 10px;
+		.catalog_item__title {
+			padding: 12.31% 11.12%;
+		}
+	}
+	
+	
 }
 
 @media only screen and (max-width : 992px) {
@@ -280,6 +296,21 @@
 					left: 20px;
 				}
 			}
+		}
+	}
+	
+	/* catalog */
+	
+	.catalog_content {
+		width: 100%;
+	}
+	
+	.catalog_item {
+		width: 100%;
+		padding: 0 10px 10px 10px;
+		.catalog_item__title {
+			padding: 8.7% 10.14%;
+			@include font-size(1.6);
 		}
 	}
 	

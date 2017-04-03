@@ -292,6 +292,7 @@ h1.title {
 
 .inner_content{
 	padding-top: 73px;
+//	min-height: calc(100% - 320px);
 }
 
 h2.title {
@@ -443,3 +444,44 @@ blockquote {
 }
 
 /* --- and of about page --- */
+
+
+/* --- card page --- */
+
+.item_pane {
+	background-color: $white;
+}
+
+
+/* --- and of card page --- */
+
+/* --- catalog page --- */
+
+.catalog_content {
+	margin: 0 -10px;
+	@include font-size(0);
+	padding-bottom: 50px;
+}
+
+.catalog_item {
+	display: inline-block;
+	width: 50%;
+	padding: 0 10px 20px 10px;
+	position: relative;
+	img {
+		object-fit: cover;
+		width: 100%;
+	}
+	.catalog_item__title {
+		position: absolute;
+		padding: 60px;
+		@include font-size(2.4);
+		letter-spacing: 0.2em;
+		color: $white;
+		text-transform: uppercase;
+		top: 0;
+		left: 10px;
+	}
+}
+
+/* --- catalog page --- */
