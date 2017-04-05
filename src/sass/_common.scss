@@ -52,6 +52,7 @@ p {
 	margin: 26px 0;
 }
 
+
 /* --- end of general styles --- */
 
 .wrap {
@@ -211,10 +212,58 @@ header {
 
 /* --- and of breadcrumbs --- */
 
+/* --- pills --- */
+
+.pills {
+	@include font-size(0);
+	margin: 0 -13px;
+	li {
+		display: inline-block;
+		margin: 0 13px 24px;
+		a {
+			display: inherit;
+			@include font-size(1.5);
+			@include line-height(3.4);
+			letter-spacing: 0.1em;
+			color: $brown;
+			border: 1px solid $brown;
+			border-radius: 18px;
+			padding: 0 22px;
+			background-color: transparent;
+			transition: color 0.25s ease, background-color 0.25s ease;
+			&:hover {
+				color: $white;
+				background-color: $brown;
+			}
+		}
+	}
+}
+
+.pills.tabSet {
+//	height: 60px;
+	margin: 0;
+}
+
+/* --- and of pills --- */
+
 /* --- pagination --- */
 
+.pagination_news {
+	padding: 0 0 26px 9.3%;
+	margin-top: -10px;
+}
+
+.pagination_catalog {
+	padding: 0 16.95%;
+}
+ 
+.pagination.invisible_desc {
+	display: none;
+}
+
 .pagination {
-	padding: 10px 0 26px 9.3%; 
+//	padding: 10px 0 26px 9.3%; 
+	padding: 20px 0 26px; 
 	li {
 		display: inline-block;
 		width: 5.8%;
@@ -463,6 +512,10 @@ blockquote {
 	padding-bottom: 50px;
 }
 
+.catalog_content_inner {
+	@include font-size(0);
+}
+
 .catalog_item {
 	display: inline-block;
 	width: 50%;
@@ -482,6 +535,76 @@ blockquote {
 		top: 0;
 		left: 10px;
 	}
+}
+
+.breadcrumbs.n-margin {
+	margin-bottom: 16px;
+}
+
+.catalog_item_inner {
+	margin: 24px 0;
+	.hover{
+		background-image: url('../img/cat_inner/overlay.jpg');
+		background-size: 100%;
+		background-size: cover;
+		width: 38.98%;
+		position: relative;
+		display: inline-block;
+		text-align: center;
+		.more {
+			@include font-size(1.6);
+//			will-change: transform; 
+			position: absolute;
+			letter-spacing: 0.2em;
+			color: $white;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			opacity: 0;
+			transition: opacity 0.25s ease;
+		}
+		&:hover .catalog_item_inner__img {
+			opacity: 0.3;
+		}
+		&:hover .more {
+			opacity: 1;
+		}
+	}
+}
+
+.catalog_item_inner__img {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	transition: opacity 0.25s ease;
+	img {
+		object-fit: cover;
+		width: 100%;
+	}
+}
+
+.catalog_item_inner__text {
+	display: inline-block;
+  overflow: hidden;
+	vertical-align: middle;
+	padding-left: 7%;
+//	width: 61.02%;
+}
+
+
+
+.catalog_item_inner__title {
+	@include font-size(2.4);
+	letter-spacing: 0.2em;
+	color: $brown;
+	text-transform: uppercase;
+}
+
+.catalog_item_inner__subtitle {
+	@include font-size(1.4);
+	letter-spacing: 0.2em;
+	color: $mainTextColor;
+	padding-top: 7px;
 }
 
 /* --- catalog page --- */

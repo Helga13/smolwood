@@ -26,4 +26,17 @@ $(document).ready(function () {
 		
 	});
 	
+	if($(window).width() < 480) {
+		$('.pills').addClass('tabSet');
+		$('.tabSet').slick({
+				arrows: false,
+				centerMode: false,
+				variableWidth: true
+
+			});
+	} else {
+		$('.pills').removeClass('tabSet');
+	}
+	
+	
 })
