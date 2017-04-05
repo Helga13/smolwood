@@ -62,88 +62,36 @@
 		</a></div>	
 	</header>
 </div>
-<div class="inner_content">
+<div class="inner_content inner_content_map">
+	<div id="map"></div>
 	<div class="wrap">
-	<div class="breadcrumbs n-margin position-top">
+	<div class="pagination invisible_desc">
 		<ul>
-			<li><a href="#">Каталог</a></li>
-			<li class="last">/</li>
-			<li class="last">дизайнерская мебель</li>
+			<li class="nav"><a href="#" class="prev">Назад</a></li>
 		</ul>
 	</div>
-	<div class="pagination invisible_desc">
-	<ul>
-		<li class="nav"><a href="#" class="prev">Назад</a></li>
-	</ul>
-</div>
-		<h2 class="title">Дизайнерская Мебель</h2>
-		<ul class="pills">
-			<li><a href="#">Столы</a></li>
-			<li><a href="#">Стулья</a></li>
-			<li><a href="#">Винные шкафы</a></li>
-			<li><a href="#">Шкафы</a></li>
-			<li><a href="#">Кровати и спальные гарнитуры</a></li>
-		</ul>
-			<div class="catalog_content_inner">
-				<div class="catalog_item_inner item_pane">
-					<a href="#" class="hover">
-						<div class="catalog_item_inner__img"><img src="/img/cat_inner/img_1.jpg" alt=""></div>
-						<span class="more">подробнее</span>
-					</a>
-					<div class="catalog_item_inner__text">
-						<div class="catalog_item_inner__title">Mark 54" Round</div>
-						<div class="catalog_item_inner__subtitle">Высокий стиль, шик, сочный цвет</div>
-					</div>
-				</div>	
-				<div class="catalog_item_inner item_pane">
-					<a href="#" class="hover">
-						<div class="catalog_item_inner__img"><img src="/img/cat_inner/img_1.jpg" alt=""></div>
-						<span class="more">подробнее</span>
-					</a>
-					<div class="catalog_item_inner__text">
-						<div class="catalog_item_inner__title">Mark 54" Round</div>
-						<div class="catalog_item_inner__subtitle">Высокий стиль, шик, сочный цвет</div>
-					</div>
-				</div>	
-				<div class="catalog_item_inner item_pane">
-					<a href="#" class="hover">
-						<div class="catalog_item_inner__img"><img src="/img/cat_inner/img_1.jpg" alt=""></div>
-						<span class="more">подробнее</span>
-					</a>
-					<div class="catalog_item_inner__text">
-						<div class="catalog_item_inner__title">Mark 54" Round</div>
-						<div class="catalog_item_inner__subtitle">Высокий стиль, шик, сочный цвет</div>
-					</div>
-				</div>	
-				<div class="catalog_item_inner item_pane">
-					<a href="#" class="hover">
-						<div class="catalog_item_inner__img"><img src="/img/cat_inner/img_1.jpg" alt=""></div>
-						<span class="more">подробнее</span>
-					</a>
-					<div class="catalog_item_inner__text">
-						<div class="catalog_item_inner__title">Mark 54" Round</div>
-						<div class="catalog_item_inner__subtitle">Высокий стиль, шик, сочный цвет</div>
-					</div>
-				</div>
-				<div class="pagination_catalog">	
-					<div class="pagination">
-						<ul>
-							<li class="nav"><a href="#" class="prev">Назад</a></li>
-							<li><a href="#" class="active">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">4</a></li>
-							<li><a href="#">5</a></li>
-							<li><a href="#">6</a></li>
-							<li><a href="#">7</a></li>
-							<li><a href="#">8</a></li>
-							<li><a href="#">9</a></li>
-							<li><a href="#">10</a></li>
-							<li class="nav next"><a href="#" class="next">Вперед</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
+	<div class="wrap_contacts">
+		<div class="contacts_col_2">
+			<h2 class="title">контакты</h2>
+			<div class="text">ИНОСТРАННОЕ УНИТАРНОЕ ПРЕДПРИЯТИЕ «КОСВИК»:<br> 
+			Адрес: Республика Беларусь, Минская обл. г. Заславль, ул. Я.Коласа 2Б <br>
+			Тел.: <a href="tel:+375175432000">+375 17 543-20-00</a><br>
+			Тел./факс: <a href="tel:+375175432020">+375 17 543-20-20</a><br>
+			E-mail: <a href="mailto:sales@coswick.com">sales@coswick.com</a>
+			 </div>
+		</div>
+		<div class="contacts_col_2">
+			<h2 class="title">Обратная связь</h2>
+			<div class="text">Если у вас возникли вопросы, желаете что-либо уточнить или внести предложение. Воспользуйтесь формой обратной связи или позвоните по контактным телефонам. Мы всегда рады Вам!
+			 </div>
+			 <form action="submit" method="post">
+			 	<input type="text" value="" class="input" placeholder="E-mail">
+			 	<input type="text" value="" class="input" placeholder="Имя">
+			 	<textarea name="" class="input" placeholder="Ваше сообщение"></textarea>
+  			<input type="submit" value="Отправить" class="submit_btn">
+			 </form>
+		</div>
+		</div>	
 	</div>
 </div>
 <div class="footer_nav">
@@ -333,6 +281,8 @@
 	</nav>
 	</div>
 </div>
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<!--<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>-->
 <script src="js/common.js"></script>
 </body>
 </html>

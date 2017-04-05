@@ -2900,6 +2900,20 @@ void 0!==c?e&&"set"in e&&void 0!==(d=e.set(a,c,b))?d:a[b]=c:e&&"get"in e&&null!=
     };
 
 }));
+if(document.getElementById('map')){
+	
+    var map;
+			function initMap() {
+				
+				map = new google.maps.Map(document.getElementById('map'), {
+					center: {lat: 53.9036759, lng: 27.5507981},
+					zoom: 12,
+					disableDefaultUI: true,
+        	scrollwheel: false
+				});
+			}
+	initMap();
+}
 
 $(document).ready(function () {
 	
