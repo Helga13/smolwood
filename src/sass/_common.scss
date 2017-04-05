@@ -52,6 +52,13 @@ p {
 	margin: 26px 0;
 }
 
+.color_black {
+	color: $mainTextColor;
+}
+.color_brown {
+	color: $brown;
+}
+
 
 /* --- end of general styles --- */
 
@@ -499,6 +506,50 @@ blockquote {
 
 .item_pane {
 	background-color: $white;
+}
+
+.item_pane_card {
+	padding: 20px 60px;
+	margin: 21px 0;
+	@include font-size(0);
+}
+
+h2.title.similar {
+	margin: 74px 0 -24px;
+}
+
+.text_block_card {
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+	padding: 0 20px 0 45px;
+	.title {
+		@include font-size(2.4);
+		text-transform: uppercase;
+		margin-top: 0;
+	}
+	.text {
+		@include font-size(1.5);
+		@include line-height(4.0);
+		margin: 0;
+	}
+}
+
+.image_block_card {
+	display: inline-block;
+	width: 50.94%;
+	.thumbs {
+		display: inline-block;
+		width: 25.556%;
+		overflow: hidden;
+		padding: 0 7px 7px 0;
+	}
+	.main {
+		display: inline-block;
+		width: 74.444%;
+		overflow: hidden;
+		float: right;
+	}
 }
 
 
