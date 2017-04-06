@@ -28,15 +28,28 @@ $(document).ready(function () {
 	
 	if($(window).width() < 480) {
 		$('.pills').addClass('tabSet');
+		$('.image_block_card').addClass('image_block_card_slider');
 		$('.tabSet').slick({
 				arrows: false,
 				centerMode: false,
-				variableWidth: true
-
-			});
+				variableWidth: true,
+ 	});
+		
+		$('.image_block_card_slider').slick({
+				arrows: false,
+				centerMode: true,
+				variableWidth: true,
+				slidesToShow: 3
+		});
 	} else {
 		$('.pills').removeClass('tabSet');
+		$('.image_block_card').removeClass('image_block_card_slider');
+		$("[data-fancybox]").fancybox({
+			buttons : false
+		});
 	}
+	
+	
 	
 	
 })

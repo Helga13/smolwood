@@ -521,8 +521,8 @@ h2.title.similar {
 .text_block_card {
 	display: inline-block;
 	vertical-align: top;
-	overflow: hidden;
-	padding: 0 20px 0 45px;
+	width: 49.06%;
+	padding: 42px 20px 40px 45px;
 	.title {
 		@include font-size(2.4);
 		text-transform: uppercase;
@@ -538,17 +538,32 @@ h2.title.similar {
 .image_block_card {
 	display: inline-block;
 	width: 50.94%;
+	padding: 42px 0 40px 0;
 	.thumbs {
 		display: inline-block;
-		width: 25.556%;
+		width: 24.444%;
 		overflow: hidden;
-		padding: 0 7px 7px 0;
+		margin: 0 1.112% 1.3% 0;
 	}
 	.main {
 		display: inline-block;
 		width: 74.444%;
 		overflow: hidden;
 		float: right;
+	}
+	.main,
+	.thumbs {
+		background: url('../img/png/zoom.png') center no-repeat, 
+			url(../img/cat_inner/overlay.jpg);
+	}
+	.hover {
+		&:hover img {
+			opacity: 0.2;
+		}
+	}
+	img {
+		width: 100%;
+		transition: opacity 0.25s ease;
 	}
 }
 
@@ -808,3 +823,58 @@ form {
 :-ms-input-placeholder      {color:$addTextColor;}
 
 /* --- end of contacts page --- */
+
+/* --- fancybox custom style --- */
+
+.fancybox-infobar__body{
+	display: none;
+}
+
+.fancybox-button {
+	background: #fff;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	width: 66px;
+	height: 66px;
+	position: fixed;
+	top: 45%;
+	z-index: 99999;
+}
+
+.fancybox-button:hover {
+	background: #fff;
+}
+
+.fancybox-button--left:after, 
+.fancybox-button--right:after {
+	top: 30px;
+}
+
+.fancybox-button--left:after {
+	left: 30px;
+}
+
+.fancybox-button--right:after {
+	right: 30px;
+}
+
+.fancybox-button:after, 
+.fancybox-button:before {
+	color: #000;
+}
+
+.fancybox-controls {
+	position: static;
+}
+
+.fancybox-button--left {
+	left: 0;
+}
+
+.fancybox-button--right {
+	right: 0;
+}
+
+.fancybox-bg {
+	background: url('../img/cat_inner/overlay.jpg');
+}
