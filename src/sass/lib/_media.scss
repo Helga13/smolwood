@@ -273,6 +273,12 @@
 		transform: none;
 		text-align: left;
 		padding: 16px 0 22px;
+		.color_black {
+			color: $mainTextColor;
+		}
+		.color_brown {
+			color: $brown;
+		}
 	}
 	
 	.catalog_col_5 {

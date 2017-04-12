@@ -1,6 +1,8 @@
 $(document).ready(function () {
-	
-	
+    
+   setTimeout(function () {
+    $('.body_index').addClass('loaded');
+   }, 0);
 
 	
 	$('.nav_button').on('click', function(e){
