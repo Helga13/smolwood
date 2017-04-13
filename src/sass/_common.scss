@@ -339,7 +339,11 @@ header {
 			@include font-size(1.6);
 			color: $mainTextColor;
 			padding: 5px;
+			transition: color 0.25s ease;
 			&.active {
+				color: $brown;
+			}
+			&:hover {
 				color: $brown;
 			}
 			&.prev:before,
@@ -350,6 +354,11 @@ header {
 				width: 21px;
 				height: 5px;
 				margin: 2px 10px 2px 0;
+				transition: background-image 0.25s ease;
+			}
+			&.prev:hover:before,
+			&.next:hover:after{
+				background-image: url('../img/svg/arrow_hover.svg');
 			}
 			&.next:after {
 				transform: rotate(180deg);
@@ -609,6 +618,7 @@ blockquote {
 		@include line-height(2.4);
 		letter-spacing: 0.1em;
 		color: $brown;
+		transition: color 0.25s ease;
 		&:before {
 			content: '';
 			background-image: url('../img/png/return-arr.png'); 
@@ -616,6 +626,9 @@ blockquote {
 			width: 21px;
 			height: 5px;
 			margin: 3px 13px 3px 0;
+		}
+		&:hover {
+			color: $hover_btn;
 		}
 	}
 }
@@ -740,6 +753,7 @@ h2.title.similar {
 	position: relative;
 	.catalog_item__img {
 		position: relative;
+		overflow: hidden;
 		&:after,
 		&:before{
 			content: '';
@@ -761,6 +775,7 @@ h2.title.similar {
 		object-fit: cover;
 		width: 100%;
 		opacity: 0.9;
+		transition: transform 0.4s ease;
 	}
 	.catalog_item__title {
 		position: absolute;
@@ -771,6 +786,9 @@ h2.title.similar {
 		text-transform: uppercase;
 		top: 0;
 		left: 10px;
+	}
+	a:hover .catalog_item__img > img {
+		transform: scale(1.1);
 	}
 }
 
@@ -852,10 +870,16 @@ h2.title.similar {
 
 
 .catalog_item_inner__title {
-	@include font-size(2.4);
-	letter-spacing: 0.2em;
-	color: $brown;
-	text-transform: uppercase;
+	a {
+		@include font-size(2.4);
+		letter-spacing: 0.2em;
+		color: $brown;
+		text-transform: uppercase;
+		transition: color 0.25s ease;
+		&:hover {
+			color: $hover_btn;
+		}
+	} 
 }
 
 .catalog_item_inner__subtitle {

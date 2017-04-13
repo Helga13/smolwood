@@ -2940,6 +2940,14 @@ $(document).ready(function () {
    setTimeout(function () {
     $('.body_index').addClass('loaded');
    }, 0);
+	
+		$(window).load(function(){ 
+			var hh = $('header').height(); 
+			var fh = $('.footer_nav').height(); 
+			var wh = $(window).height();
+			var сh = wh - hh - fh - 120; 
+			$('.inner_content').css('min-height', сh); 
+		});
 
 	
 	$('.nav_button').on('click', function(e){
